@@ -39,7 +39,7 @@
         <nav class="header-nav-wrap">
           <ul class="header-main-nav">
             <li class="current">
-              <a class="smoothscroll" href="#home" title="intro">Anasayfa</a>
+              <a class="smoothscroll" href="#home" title="intro">Intro</a>
             </li>
             <li>
               <a class="smoothscroll" href="#about" title="about"
@@ -98,8 +98,11 @@
 
           <div class="home-content__right">
             <img
-              src="./images/hero-app-screens-800.png"
-              srcset="./images/ 1x, images/hero-app-screens-1600.png 2x"
+              src="images/hero-app-screens-800.png"
+              srcset="
+                images/hero-app-screens-800.png  1x,
+                images/hero-app-screens-1600.png 2x
+              "
             />
           </div>
         </div>
@@ -196,93 +199,6 @@
       <!-- end about-desc -->
     </section>
     <!-- end s-about -->
-
-    <!-- about-how
-    ================================================== -->
-    <section id="about-how" class="s-about-how">
-      <div class="row">
-        <div class="col-full video-bg" data-aos="fade-up">
-          <div class="shadow-overlay"></div>
-
-          <a
-            class="btn-video"
-            href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0"
-            data-lity
-          >
-            <span class="video-icon"></span>
-          </a>
-
-          <div class="stats">
-            <div class="item-stats">
-              <span class="item-stats__num"> 2.2M </span>
-              <span class="item-stats__title"> Downloads </span>
-            </div>
-            <!-- end item-stats -->
-            <div class="item-stats">
-              <span class="item-stats__num"> 30K </span>
-              <span class="item-stats__title"> Positive Reviews </span>
-            </div>
-            <!-- end item-stats -->
-          </div>
-        </div>
-        <!-- end video-bg -->
-      </div>
-
-      <div class="row process-wrap">
-        <h2 class="display-2 text-center" data-aos="fade-up">
-          Uygulama Nasıl Çalışır?
-        </h2>
-
-        <div class="process" data-aos="fade-up">
-          <div class="process__steps block-1-2 block-tab-full group">
-            <div class="col-block step">
-              <h3 class="item-title">Üye Ol</h3>
-              <p>
-                Kullanıcı rahatlığını göz önünde bulundurarak hazırlanmış
-                uygulamamıza kendi kişisel bilgilerinizi girerek üye
-                olabilirsiniz. Ayrıca, Google veya iCloud hesabınızı kullanarak
-                da uygulamaya giriş yapabilirsiniz.
-              </p>
-            </div>
-
-            <div class="col-block step">
-              <h3 class="item-title">İstediğin içeceği seç</h3>
-              <p>
-                Geniş ürün yelpazemiz içerisinde kendi sevdiğiniz ve istediğiniz
-                içeceği bulmanız artık çok daha kolay! Çaydan kahveye, meyve
-                suyundan alkollü içeceklere kadar her zevke uygun birçok seçenek
-                sizi bekliyor. Kendinizi ödüllendirin ve SipStash'te aradığınız
-                içeceği keşfedin!
-              </p>
-            </div>
-
-            <div class="col-block step">
-              <h3 class="item-title">Sepete Ekle ve Siparişini Ver</h3>
-              <p>
-                SipStash'te bulduğunuz favori içeceğinizi sepete ekleyin ve
-                keyfinize keyif katın! Siparişinizi tamamlamak için tek yapmanız
-                gereken 'Sepete Ekle' ve ardından 'Siparişini Ver' butonlarına
-                tıklamak. Hızlı, kolay ve güvenli alışveriş deneyimi için
-                SipStash'i tercih edin!
-              </p>
-            </div>
-
-            <div class="col-block step">
-              <h3 class="item-title">İçeceğinin tadını çıkar</h3>
-              <p>
-                İçeceğinin tadını çıkar ve anın tadını çıkarmak için SipStash'i
-                tercih et! En sevdiğin içecekleri keşfet, yeni lezzetler
-                deneyimle ve her yudumu özgürce yaşa. SipStash ile içeceğin
-                keyfini doyasıya çıkarmanın zamanı geldi!
-              </p>
-            </div>
-          </div>
-          <!-- end process__steps -->
-        </div>
-      </div>
-      <!-- end about-how -->
-    </section>
-    <!-- end s-about-how -->
 
     <!-- features
     ================================================== -->
@@ -500,17 +416,17 @@
       </div>
 
       <div class="row download-bottom-image" data-aos="fade-up">
-        <img
-          src="images/app-screen-1400.png"
-          srcset="
-            images/app-screen-600.png   600w,
-            images/app-screen-1400.png 1400w,
-            images/app-screen-2800.png 2800w
-          "
-          sizes="(max-width: 2800px) 100vw, 2800px"
-          alt="App Screenshots"
-        />
+        <div class="phone-screenshot">
+          <img src="images/Login.jpg" alt="App Screenshot 1" />
+        </div>
+        <div class="phone-screenshot">
+          <img src="images/Favorites.jpg" alt="App Screenshot 2" />
+        </div>
+        <div class="phone-screenshot">
+          <img src="images/My Orders - Completed.jpg" alt="App Screenshot 3" />
+        </div>
       </div>
+      >
     </section>
     <!-- end s-download -->
     <!-- Footer -->
@@ -537,15 +453,21 @@
               <h4>Site linkleri</h4>
               <ul class="footer__site-links">
                 <li><a href="#home" class="smoothscroll">Intro</a></li>
-                <li><a href="#about" class="smoothscroll">About</a></li>
-                <li><a href="#features" class="smoothscroll">Features</a></li>
-                <li><a href="#download" class="smoothscroll">Download</a></li>
+                <li>
+                  <a href="#about" class="smoothscroll">SipStash Hakkında</a>
+                </li>
+                <li>
+                  <a href="#features" class="smoothscroll"
+                    >SipStash Teknik Özellikleri</a
+                  >
+                </li>
+                <li><a href="#download" class="smoothscroll">İndir</a></li>
               </ul>
             </div>
             <div class="footer__contact col-seven mob-full">
               <h4>Bizimle İletişime Geçin</h4>
               <p>
-                Phone: (+63) 555 1212 <br />
+                Telefon: (+63) 555 1212 <br />
                 Fax: (+63) 555 0100
               </p>
               <ul>

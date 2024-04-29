@@ -100,6 +100,21 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+.phone-screenshot {
+  width: calc(100% / 4); /* Üç resmin her biri için eşit genişlik */
+  display: inline-block;
+  text-align: center; /* Resimleri merkezlemek için */
+  box-sizing: border-box;
+  margin: 40px;
+}
+
+.phone-screenshot img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Resmi merkezlemek için */
+}
+
 a:hover,
 a:focus,
 a:active {
