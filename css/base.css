@@ -74,6 +74,21 @@ figure {
   margin: 1em 40px;
 }
 
+.phone-screenshot {
+  width: calc(100% / 4);
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 42px;
+}
+
+.phone-screenshot img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
